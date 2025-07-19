@@ -1,0 +1,244 @@
+/* === Reset & Base === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, #10002b, #3c096c);
+    min-height: 100vh;
+    color: white;
+}
+
+/* === Navbar === */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav-left .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.input-box {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    opacity: 0.4;
+}
+
+.nav-right .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-right .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-right .nav-links a:hover {
+    color: #e0aaff;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* === Main Section Background === */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    padding: 2rem;
+    background-image: url("gradient-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* === Main Content Box === */
+.content {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5rem 4rem;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 1000px;
+    width: 95%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content h2 {
+    font-size: 2.2rem;
+    /* Reduced slightly from 2.5rem */
+    white-space: nowrap;
+    /* Keeps it on one line */
+}
+
+.content p {
+    font-size: 1.2rem;
+    font-weight: normal;
+    opacity: 0.9;
+    margin-bottom: 2.5rem;
+}
+
+/* === Auth Buttons === */
+.auth-buttons {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.signup {
+    background-color: #f9a825;
+    color: #2a003f;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* === Movie Catalogue Section === */
+.catalogue {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #1a0033;
+}
+
+.catalogue h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.movie-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.movie-card p {
+    margin: 0;
+    padding: 1rem;
+    font-weight: bold;
+    color: #eee;
+    font-size: 1rem;
+}
+
+.movie-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.catalogue {
+    padding: 40px;
+    color: white;
+}
+
+.catalogue h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    margin-top: 40px;
+    color: #ffcc00;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.movie-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 20px;
+}
+
+.movie-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.movie-card p {
+    margin: 0;
+    padding: 1rem;
+    font-weight: bold;
+    color: #eee;
+    font-size: 1rem;
+}
+
+.movie-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
